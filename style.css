@@ -1,0 +1,306 @@
+
+.cuerpo {
+    background-color: #131212;
+    color: #ffffff;
+}
+button a{
+    text-decoration: none !important;
+    color: #eddddd !important;
+}
+.modal-header{
+    background: linear-gradient(to right, red, rgb(255, 102, 0));
+    opacity: 60%;
+    color: white;
+}
+.modal-body{
+    background: linear-gradient(to right, red, rgb(255, 102, 0));
+    opacity: 60%;
+    color: white;
+}
+
+.form-control{
+    background-color: #000000 !important;
+}
+
+.modal-footer{
+    background: linear-gradient(to right, red, rgb(255, 102, 0));
+    opacity: 60%;
+    color: white;
+}
+
+.navegacion {
+    text-align: right;
+    background-image: linear-gradient(to right, red, rgb(255, 102, 0));
+    padding: 10px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+    min-height: 25px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: clamp(11px, 2vw, 14px);
+}
+
+.navegacion a:visited { color: #1a279e; text-decoration: none; }
+.navegacion a:hover   { color: #4d1a9e; text-decoration: underline; }
+.navegacion a:active  { color: #1a799e; text-decoration: none; }
+
+
+.bienvenida {
+    color: #ff0000;
+    text-align: center;
+    letter-spacing: clamp(2px, 1vw, 8px);
+    font-size: clamp(30px, 6vw, 60px);
+    text-shadow: #ffffff 2px 2px 4px;
+    padding: 0 10px;
+}
+
+.nosotros {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.cuerpo > img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+.eventos-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.conciertos {
+    text-align: center;
+    font-size: clamp(14px, 2vw, 25px);
+    border: 3px dashed #ff33003e;
+    padding: 16px 10px 20px;
+    flex: 1 1 300px;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.conciertos table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.shows {
+    font-size: clamp(16px, 2.5vw, 30px);
+    text-align: center;
+    padding: 16px 10px 20px;
+    border: 3px dashed #ff33003e;
+    flex: 1 1 280px;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.shows table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.circos {
+    font-size: clamp(16px, 2.5vw, 30px);
+    text-align: center;
+    border: 3px dashed #ff33003e;
+    padding: 16px 10px 20px;
+    flex: 1 1 280px;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.circos table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.contenedor-conciertos,
+.contenedor-show,
+.contenedor-circos {
+    border-radius: 30px;
+    width: 300px;
+    height: 20px;
+    background-color: #131212;
+}
+
+.contenedor-show,
+.contenedor-circos {
+    background-color: #e0e0e0;
+}
+
+.caja0, .caja00, .caja000,
+.caja1, .caja2, .caja3, .caja4,
+.caja5, .caja6, .caja7 {
+    font-size: 13px;
+    border-radius: 30px;
+    height: 20px;
+    background-image: linear-gradient(to right, #6c0a0a, #913f13);
+}
+
+.caja0   { width: 70%; }
+.caja00  { width: 50%; }
+.caja000 { width: 48%; }
+.caja1   { width: 60%; }
+.caja2   { width: 50%; }
+.caja3   { width: 75%; }
+.caja4   { width: 99%; }
+.caja5   { width: 60%; }
+.caja6   { width: 70%; }
+.caja7   { width: 50%; }
+
+
+.calendario {
+    text-align: center;
+    text-shadow: #a84747 2px 2px 4px;
+    padding: 0 16px;
+}
+
+.calendar {
+    text-align: center;
+    overflow-x: auto;
+    padding: 0 10px;
+}
+
+.calendar table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    min-width: 320px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.calendar td,
+.calendar th {
+    padding: 6px 4px;
+    font-size: clamp(10px, 1.5vw, 14px);
+}
+
+
+.formulario {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-image: linear-gradient(hwb(0 0% 50% / 0.502), hsla(21, 100%, 50%, 0.502));
+    width: 340px;
+    max-width: 90vw;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario select {
+    width: 100%;
+    max-width: 260px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.formulario input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+.formulario input[type="submit"]:hover {
+    background-color: #da0000;
+    transform: scale(1.05);
+}
+
+
+.encuesta {
+    text-align: center;
+    padding: 10px;
+}
+
+.encuesta table {
+    margin: 0 auto;
+}
+
+.btn-enviar{
+    background-color: #1a799e;
+    border-radius: 10px;
+}
+
+
+.food {
+    background-image: linear-gradient(to right, red, rgb(255, 102, 0));
+    padding: 10px;
+}
+
+.derechos {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .eventos-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conciertos,
+    .shows,
+    .circos {
+        width: 90%;
+        max-width: 100%;
+        flex: unset;
+    }
+
+    .formulario {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navegacion {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .conciertos table {
+        font-size: 12px;
+    }
+
+    .contenedor-conciertos,
+    .contenedor-show,
+    .contenedor-circos {
+        width: 100px;
+    }
+
+    .calendar table {
+        font-size: 10px;
+    }
+
+    .formulario {
+        width: 95%;
+        padding: 20px 12px;
+    }
+}

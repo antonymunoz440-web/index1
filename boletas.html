@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>compra tu boleta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleteria online</title>
+    <link rel="icon" type="image/x-icon" href="img/boletik logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="cuerpo">
+
+<div class="container">
+  <div class="row align-items-center">
+
+    <!-- Logo -->
+    <div class="col">
+      <img src="img/boletik logo.jpeg" width="100">
+    </div>
+
+    <!-- Botón Modal -->
+    <div class="col text-end">
+      <button class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+        Iniciar Sesión
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <input type="email"
+               class="form-control mb-3"
+               placeholder="Correo electrónico">
+
+        <input type="password"
+               class="form-control"
+               placeholder="Contraseña">
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+        <a href="registro.html"> Registrarme </a>
+        </button>
+
+        <button class="btn btn-primary">
+          Entrar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="navegacion">
+    
+        <a href="#conciertos">entradas conciertos</a> |
+        <a href="#shows">entradas shows</a> |
+        <a href="#circos">entradas circos</a> |
+        <a href="#calendario">calendario</a> |
+        <a href="#encuesta">encuesta</a>
+</nav><br>
+
+
+
+<h1 class="bienvenida">🎟️ BOLETERÍA ONLINE</h1>
+
+    <p class="nosotros"><em>Bienvenido a nuestra boletería en línea. En esta página podrás ver los precios y comprar entradas para conciertos, shows, circos y festivales. No pierdas la oportunidad de vivir estos eventos increíbles.<br> ¡Aprovecha! Quedan pocas entradas disponibles.</em></p>
+
+        <img src="img/concert.jpeg" alt="The nectar arena" height="400" width="1500">
+    <br> <br>
+<div class="eventos-wrap">
+<nav class="conciertos">
+    <h2 id="conciertos">Proximos Conciertos</h2>
+
+    <table border="2">
+        <tr>
+            <th>artista</th>
+            <th>fecha</th>
+            <th>precio</th>
+            <th>% vendidas</th>
+            <th>comprar</th>
+        </tr>
+        <tr>
+            <td>Dj la mega</td>
+            <td>10 marzo</td>
+            <td>$50.000</td>
+            <td><div class="contenedor-conciertos">
+                <div class="caja0">70% vendidas</div></td>
+            <td><a href="#compra">comprar</a></td>
+        </tr>
+        <tr>
+            <td>rock</td>
+            <td>25 marzo</td>
+            <td>$80.000</td>
+            <td><div class="contenedor-conciertos">
+                <div class="caja00">50% vendidas</div></td>
+            <td><a href="#compra">comprar</a></td>
+        </tr>
+        <tr>
+            <td>Carlos Vives</td>
+            <td>18 septiembre</td>
+            <td>$150.000</td>
+            <td><div class="contenedor-conciertos">
+                <div class="caja000">48% vendidas</div></td>
+            <td><a href="#compra">comprar</a></td>
+        </tr>
+    </table>
+</nav>
+
+    <br><br>
+    <div class="shows">
+    <h2 id="shows">Proximos Shows</h2>
+    <table>
+        <tr>
+            <td>Show humoristico</td>
+            <td><div class="contenedor-show">
+                <div class="caja1">60% vendidas</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td>El show de los Flims</td>
+            <td><div class="contenedor-show">
+                <div class="caja2">50% vendidas</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td>El show de los 90s</td>
+            <td><div class="contenedor-show">
+                <div class="caja3">75% vendidas</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td>El show infantil</td>
+            <td><div class="contenedor-show">
+                <div class="caja4">99% vendidas</div>
+            </div></td>
+        </tr>
+    </table>
+    </div>
+    <br><br>
+
+    <div class="circos">
+    <h2 id="circos">Entradas Circos</h2>
+    <table>
+        <tr>
+            <td>Circos Hermanos Gasca</td>
+            <td><div class="contenedor-circos">
+                <div class="caja5">60% vendidas</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td>Circos fantasma</td>
+            <td><div class="contenedor-circos">
+                <div class="caja6">70% vendidas</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td>Circos de primavera</td>
+            <td><div class="contenedor-circos">
+                <div class="caja7">50% vendidas</div>
+            </div></td>
+        </tr>
+    </table>
+    </div>
+    </div>
+    <br><br>
+
+<nav class="calendario">
+    <h1 id="calendario">Calendario de eventos</h1>
+    <details>
+    <summary>Este mes</summary>
+    <p>Concierto Rock</p>
+    <p>Cico hermanos gasca</p>
+    <p>Concierto DJ la mega</p>
+    </details>
+
+    <details>
+        <summary>Próximo Mes</summary>
+        <p>Concierto Kany Garcia</p>
+        <p>Festival de Salsa</p>
+        <p>Show Humorístico</p>
+        <p>Show Infantil</p>
+        <p>Circo de primavera</p>
+    </details>
+
+    <details>
+        <summary>En los Próximos 6 Meses</summary>
+        <p>Tour Internacional Pop</p>
+        <p>Concierto carlos vives</p>
+        <p>Circo fantasma</p>
+    </details>
+    <br><br>
+</nav>
+
+<nav class="calendar">
+    <table border="10">
+        <tr>
+            <th colspan="7">Marzo</th>
+        </tr>
+        <tr>
+            <th>DOMINGO</th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIERCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+            <th>SABADO</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td>09</td>
+            <td>10 X</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25 X</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+</nav>
+<br><br>
+
+<div class="formulario">
+<h2" id="compra">Formulario de Compra</h2>
+
+    <form>
+        <p>Nombre Completo:</p>
+        <input type="text" name="nombre">
+        <p>Email</p>
+        <input type="email" name="correo"><br>
+        <p>seleciona el tipo de evento</p>
+        <select>
+            <option>Concierto</option>
+            <option>Show</option>
+            <option>Circo</option>
+        </select>
+        <br>
+        <p>Cantidad:</p>
+        <input type="number" min="1" max="10">
+        <br>
+        <p>Método de pago:</p>
+        <input type="radio" name="pago"> Tarjeta<br>
+        <input type="radio" name="pago"> Nequi<br>
+        <input type="radio" name="pago"> PSE<br><br>
+
+        <input type="submit" value="Pagar Entrada">
+    </form>
+</div>
+<br><br>
+
+<nav class="encuesta">
+<table border="0">
+    <tr><th><h3 id="encuesta">Encuesta</h3></th></tr>
+    <tr> <td>
+<p>que tipo de eventos prefieres</p>
+<input type="checkbox" id="conciertos" name="evento" value="conciertos">
+<label for="conciertos">Conciertos</label><br>
+<input type="checkbox" id="shows" name="evento" value="shows">
+<label for="shows">Shows</label><br>
+<input type="checkbox" id="circos" name="evento" value="circos">
+<label for="circos">Circos</label><br>
+</td>
+</tr>
+<tr> 
+<td>
+<p>Recomendarias nuestra pagina</p>
+<input type="radio" id="recomendar" name="recomendar" value="recomendar">
+<label for="recomendar">Si</label><br>
+<input type="radio" id="no_recomendar" name="recomendar" value="no_recomendar">
+<label for="no_recomendar">No</label><br>
+</td>
+</tr>
+<tr>
+<td> <input class="btn-enviar" type="submit" value="Enviar Encuesta"></td>
+</tr>
+</table>
+
+</nav>
+
+<nav class="food">
+<footer>
+    <a href = https://ibaguefestival.com/ > Proximos  festivales </a>
+    <br><br>
+<p>envianos tus dudas a <a href = "mailto:antonymunoz440@gmnail.com" > antonymunoz440@gmnail.com </a></p>
+    <p class="derechos">&copy; boleteria. Todos los derechos reservados.</p>
+</footer>
+</nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
+
+
